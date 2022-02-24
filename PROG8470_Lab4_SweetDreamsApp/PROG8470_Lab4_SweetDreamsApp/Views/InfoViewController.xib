@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoViewController" customModule="PROG8470_Lab4_SweetDreamsApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nat-iB-UKw">
+                    <rect key="frame" x="165.5" y="84" width="83" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.86274516580000005" green="0.94509804249999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="a2M-wb-MHe">
+                    <rect key="frame" x="20.5" y="135" width="373" height="268.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">A selection of stories that are short and sweet and should appeal to younger children. You’ll find some of the classic fairy tales and fables here.</string>
+                    <color key="textColor" red="0.86274516580000005" green="0.94509804249999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deg-mR-Hub">
+                    <rect key="frame" x="165.5" y="435.5" width="83" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.86274516580000005" green="0.94509804249999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-Ff-MLR">
+                    <rect key="frame" x="20.5" y="527" width="373" height="269"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <string key="text">A selection of stories that are more complex and should appeal to older children. You’ll find some of the classic fairy tales and fables here.</string>
+                    <color key="textColor" red="0.86274516580000005" green="0.94509804249999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.33725491169999999" green="0.043137259779999999" blue="0.6784313917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Nat-iB-UKw" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="399-gi-54b"/>
+                <constraint firstItem="deg-mR-Hub" firstAttribute="width" secondItem="Nat-iB-UKw" secondAttribute="width" id="F8h-Ta-G6G"/>
+                <constraint firstItem="DwS-Ff-MLR" firstAttribute="top" secondItem="deg-mR-Hub" secondAttribute="bottom" constant="64.5" id="Fia-Gz-Glx"/>
+                <constraint firstItem="a2M-wb-MHe" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="IPh-m9-636"/>
+                <constraint firstItem="deg-mR-Hub" firstAttribute="top" secondItem="a2M-wb-MHe" secondAttribute="bottom" constant="32" id="JO5-Qa-9HA"/>
+                <constraint firstItem="a2M-wb-MHe" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="Jsa-3X-CDS"/>
+                <constraint firstItem="Nat-iB-UKw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="RP3-bR-Qh9"/>
+                <constraint firstItem="deg-mR-Hub" firstAttribute="height" secondItem="Nat-iB-UKw" secondAttribute="height" id="Rj4-ot-Fdo"/>
+                <constraint firstItem="a2M-wb-MHe" firstAttribute="top" secondItem="Nat-iB-UKw" secondAttribute="bottom" constant="24" id="TOV-uV-Cx4"/>
+                <constraint firstItem="DwS-Ff-MLR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Tjc-Zv-Aac"/>
+                <constraint firstItem="Nat-iB-UKw" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.03" id="VUh-bK-ddZ"/>
+                <constraint firstItem="DwS-Ff-MLR" firstAttribute="height" secondItem="a2M-wb-MHe" secondAttribute="height" id="Zb1-Yd-me3"/>
+                <constraint firstItem="deg-mR-Hub" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ghJ-4a-DAN"/>
+                <constraint firstItem="Nat-iB-UKw" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.2" id="lGB-Hw-XRx"/>
+                <constraint firstItem="DwS-Ff-MLR" firstAttribute="width" secondItem="a2M-wb-MHe" secondAttribute="width" id="rnc-lW-NM2"/>
+                <constraint firstItem="a2M-wb-MHe" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.9" id="zmK-sD-aHp"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </view>
+    </objects>
+</document>
